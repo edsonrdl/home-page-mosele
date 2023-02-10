@@ -1,0 +1,124 @@
+.footer {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #161616;
+}
+.content{
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0 ;
+  text-align: center;
+}
+
+.copyright{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px 100px;
+}
+.social{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  float: right;
+}
+.facebook{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 45px;
+  height: 30px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  background-image: url(https://classeasaude.com.br/wp-content/uploads/2020/01/icone-fb-branco.png);
+  ;
+}
+.instagram{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Instagram_logo.png/1024px-Instagram_logo.png);
+}
+.linkedin {
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 30px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  background-image: url(https://gcont.net.br/wp-content/uploads/2021/08/linkedin-branco-png-1-300x294.png);
+  margin: -2px 0px 0px 6px; 
+}
+.youtube{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  background-image: url(/wp-content/themes/twentynineteen-opah/images/social-youtube.png);
+  display: none;
+}
+.copyright p {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  font-size: 12px;
+  color: #fff;
+  text-align: left;
+  margin: 10px 0;
+}

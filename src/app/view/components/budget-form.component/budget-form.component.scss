@@ -1,0 +1,695 @@
+.main_opah {
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+  }
+
+
+  .page_contato {
+	padding-bottom: 0 !important;
+	min-height: calc(100vh - 95px);
+	background-color: #f4f4f4;
+	padding: 100px 16px 72px !important;
+  }
+  @media (max-width: 769px){
+	.page_contato {
+	  padding-bottom: 0 !important;
+  }
+}
+  .main_opah section {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+  }
+  section {
+	display: block;
+  }
+  *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  .content{ 
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	width: 100%;
+	max-width: 1230px;
+	padding: 0;
+	margin: 0 auto;
+  }
+  .page_contato h2{
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	margin: 32px 0 16px;
+  }
+  h2 {
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+  }
+  @media (max-width: 1025px){
+	.page_contato .row {
+	  display: block;
+		display: table-cell;
+		width: 100%;
+	}
+  }
+  .page_contato .row {
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	display: block;
+  }
+  
+  
+  .page_contato .row .column_1 {
+	  display: table-cell;
+	  vertical-align: top;
+	  width: 600px;
+	  padding: 0 110px 0 0;
+  }
+  @media (max-width: 1025px){
+	.page_contato .row .column_1 {
+	  display: block;
+	  width: 100%;
+	  padding: 0 0 20px 0;
+  }
+  }
+  
+  .page_contato .row .colum_1 {
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	vertical-align: top;
+	width: 100%;
+	padding: 0 0 20px 0;
+  }
+  
+  .page_contato .line {
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	width: 100px;
+	height: 4px;
+	margin: 32px 0;
+	background-color: #ffdc06;
+  }
+  h3 {
+	display: block;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+  }
+  .page_contato .p {
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	line-height: 1.65;
+	font-size: 18px;
+	margin: 20px 0;
+  }
+  p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+  }
+  @media (max-width: 1025px){
+	.page_contato .contato_linkedin {
+	  margin: 72px 0;
+	  display: none;
+  }
+  }
+  .page_contato .contato_linkedin {
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	margin: 72px 0;
+	display: none;
+  }
+  .page_contato .contato_linkedin h3 {
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	margin: 10px 0 4px;
+  }
+  h3 {
+	display: block;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+  }
+  .page_contato .contato_linkedin a {
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	margin: 10px 0 4px;
+  }
+  a, a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+	transition: all 0.3s;
+	cursor: pointer;
+  }
+  @media (max-width: 1025px){
+	.page_contato .row .column_2 {
+	  width: calc(100% + 32px);
+	  margin-left: -16px;
+	  padding: 32px 16px;
+	  display: table-cell;
+	  vertical-align: top;
+	  width: 630px;
+	  padding: 40px 60px;
+	  background-color: #fff;
+  }
+  }
+  .page_contato .row .colum_2 {
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	vertical-align: top;
+	background-color: #fff;
+	width: calc(100% + 32px);
+	margin-left: -16px;
+	padding: 32px 16px;
+	display: inline-block;
+  }
+  .page_contato .row .column_2 {
+	  display: table-cell;
+	  vertical-align: top;
+	  width: 630px;
+	  padding: 40px 60px;
+	  background-color: #fff;
+  }
+@media (max-width:1025px){
+	.page_contato .row .column_2{
+		display: flex;
+		flex-direction: column;
+		vertical-align: top;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 40px 60px;
+		background-color: #fff;
+
+	}
+}
+  div.wptormds-container-full {
+	font-family: 'Montserrat', sans-serif;
+	background: none;
+	border: 0 none;
+	float: none;
+	font-size: 100%;
+	height: auto;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	margin-bottom: 24px;
+  
+  }
+  form {
+	display: block;
+	margin-top: 0em;
+  }
+  div.wpforms-container-full .wpforms-form .wforms-field {
+	font-family: 'Montserrat', sans-serif;
+	background: none;
+	border: 0 none;
+	float: none;
+	font-size: 100%;
+	height: auto;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	margin: 0;
+	box-shadow: none;
+	padding: 10px 0;
+	clear: both;
+  }
+  div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
+	font-family: 'Montserrat', sans-serif;
+	background: none;
+	border: 0 none;
+	float: none;
+	font-size: 100%;
+	height: auto;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	margin: 0;
+	box-shadow: none;
+	padding: 10px 0;
+	clear: both;
+  }
+  div.wpforms-container-full .wpforms-form .wpforms-field-label {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	box-shadow: none;
+	border: 0;
+	background: none;
+	height: auto;
+	box-sizing: border-box;
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	float: none;
+	line-height: 1.3;
+	margin: 0 0 4px 0;
+	padding: 0;
+  }
+  div.wpforms-container-full .wpforms-form input, div.wpforms-container-full .wpforms-form label, div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form button, div.wpforms-container-full .wpforms-form textarea {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	background: none;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  .page_contato label {
+	display: none;
+	font-weight: bold;
+	font-size: 14px;
+  }
+  label {
+	cursor: default;
+  }
+  div.wpforms-container-full .wpforms-form .wpforms-required-label{
+	line-height: 1.3;
+	font-family: 'Montserrat', sans-serif;
+	background: none;
+	border: 0 none;
+	float: none;
+	font-size: 100%;
+	height: auto;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	color: #ff0000;
+	font-weight: 400;
+  }
+  .wpforms-field-label{
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	box-shadow: none;
+	border: 0;
+	background: none;
+	height: auto;
+	box-sizing: border-box;
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	float: none;
+	line-height: 1.3;
+	margin: 0 0 4px 0;
+	padding: 0;
+  }
+  span.wpforms-required-label {
+	font-weight: normal;
+	color: red;
+  }
+  
+  div.wpforms-container-full .wpforms-form input.wpforms-field-large, div.wpforms-container-full .wpforms-form select.wpforms-field-large, div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-large{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	visibility: visible;
+	box-shadow: none;
+	margin: 0;
+	background: none;
+	background-color: #fff;
+	border-radius: 2px;
+	color: #333;
+	display: block;
+	float: none;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	padding: 6px 10px;
+	height: 38px;
+	width: 100%;
+	line-height: 1.3;
+	text-transform: none;
+	white-space: nowrap;
+	max-width: 100%;
+  }
+  .wpforms-field-wpforms-field-select{
+	font-family: 'Montserrat', sans-serif;
+	background: none;
+	border: 0 none;
+	float: none;
+	font-size: 100%;
+	height: auto;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	margin: 0;
+	box-shadow: none;
+	padding: 10px 0;
+	clear: both;
+  }
+  div.wpforms-container-full .wpforms-form select {
+	max-width: 100%;
+	text-transform: none;
+	white-space: nowrap;
+  }
+  div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
+	background-color: #fff;
+	box-sizing: border-box;
+	border-radius: 2px;
+	color: #333;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: block;
+	float: none;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	padding: 6px 10px;
+	height: 38px;
+	width: 100%;
+	line-height: 1.3;
+  }
+  .page_contato select, .page_contato input[type=text], .page_contato input[type=email], .page_contato input[type=submit] {
+	height: 40px;
+	margin: 5px 0 20px;
+	border-color: #ccc;
+	border-radius: 3px;
+  }
+  .page_contato select, .page_contato textarea, .page_contato input[type=text], .page_contato input[type=email], .page_contato input[type=submit] {
+	display: block;
+	width: 100%;
+	height: 56px;
+	margin: 20px 0;
+	padding: 0 16px;
+	border: solid 1px #000;
+	background-color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+	color: #000;
+	outline: none;
+  }
+  select:not(:-internal-list-box) {
+	overflow: visible !important;
+  }
+  select {
+	writing-mode: horizontal-tb !important;
+	text-rendering: auto;
+	color: fieldtext;
+	letter-spacing: normal;
+	word-spacing: normal;
+	line-height: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+	appearance: auto;
+	box-sizing: border-box;
+	align-items: center;
+	white-space: pre;
+	-webkit-rtl-ordering: logical;
+	background-color: field;
+	cursor: default;
+	margin: 0em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+	border-image: initial;
+	border-radius: 0px;
+  }
+  option {
+	font-weight: normal;
+	display: block;
+	white-space: nowrap;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
+  }
+  
+  input[type="text" i] {
+	padding: 1px 2px;
+  }
+  input {
+	writing-mode: horizontal-tb !important;
+	text-rendering: auto;
+	color: fieldtext;
+	letter-spacing: normal;
+	word-spacing: normal;
+	line-height: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+	appearance: auto;
+	-webkit-rtl-ordering: logical;
+	cursor: text;
+	background-color: field;
+	margin: 0em;
+	padding: 1px 2px;
+	border-width: 2px;
+	border-style: inset;
+	border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+	border-image: initial;
+  }
+  div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	visibility: visible;
+	overflow: visible;
+	box-shadow: none;
+	margin: 0;
+	background: none;
+	background-color: #fff;
+	border-radius: 2px;
+	color: #333;
+	display: block;
+	float: none;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	padding: 6px 10px;
+	width: 100%;
+	line-height: 1.3;
+	height: 120px;
+  }
+  div.wpforms-container-full .wpforms-form .wpforms-field-hp {
+	font-family: 'Montserrat', sans-serif;
+	background: none;
+	border: 0 none;
+	float: none;
+	font-size: 100%;
+	height: auto;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	margin: 0;
+	box-shadow: none;
+	padding: 10px 0;
+	clear: both;
+	display: none !important;
+	position: absolute !important;
+	left: -9000px !important;
+  }
+  div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+	font-family: 'Montserrat', sans-serif;
+	background: none;
+	border: 0 none;
+	float: none;
+	font-size: 100%;
+	height: auto;
+	letter-spacing: normal;
+	list-style: none;
+	outline: none;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+	visibility: visible;
+	overflow: visible;
+	margin: 0;
+	box-shadow: none;
+	padding: 10px 0 0 0;
+	clear: both;
+	position: relative;
+  }
+  .div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: normal;
+	list-style: none;
+	position: static;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	visibility: visible;
+	overflow: visible;
+	box-shadow: none;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+	background: none;
+	box-sizing: border-box;
+	width: auto;
+	height: 56px;
+	padding: 0 80px 0 40px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+	color: #060606;
+	background-color: #FFDC06;
+	background-image: url(/wp-content/themes/twentynineteen-opah/images/arrow-send.png);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 20px) center;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+  }
+  button {
+	appearance: auto;
+	writing-mode: horizontal-tb !important;
+	text-rendering: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+	line-height: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: center;
+	align-items: flex-start;
+	cursor: default;
+	box-sizing: border-box;
+	margin: 0em;
+	padding: 1px 6px;
+	border-width: 2px;
+	border-style: outset;
+	border-color: buttonborder;
+	border-image: initial;
+  }

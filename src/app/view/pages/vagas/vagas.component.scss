@@ -1,0 +1,252 @@
+.site-header {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to left, #ff5c6c, #fcb80a);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.site-header::before {
+  content: '';
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+}
+
+.header-navbar {
+  display: flex;
+
+  padding: 1rem 2rem;
+  border: 1px inset #fafaf8;
+  border-style: hidden hidden inset hidden;
+}
+
+@media (max-width:650px){
+  .header-navbar{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.logo-opah{
+  width: 40%;
+}
+.header-navbar__menu {
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.menu-item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: fit-content;
+  margin-left: 5%;
+  font-size: 16px;
+  flex-wrap: nowrap;
+}
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  font-family: DM Sans, sans-serif;
+}
+.titulo {
+  margin: left 5%;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 4%;
+  flex-wrap: wrap;
+  padding-bottom: 4%;
+  margin-left: calc(25% - 90px);
+  justify-content: center;
+}
+@media (max-width:710px){
+  .titulo{
+    font-size: 40px;
+  }
+}
+@media (max-width:450px){
+  .titulo{
+    font-size: 30px;
+  }
+}
+.card-vaga {
+  box-shadow: 0 5px 30px rgb(7 36 86 / 8%);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  transition: box-shadow 0.25s;
+  border: 1px solid #ffc107;
+  margin-bottom: 2rem;
+  width: 62%;
+}
+.card-vaga h2 {
+  color: rgba(15, 23, 39, 0.85);
+  font-size: 25px;
+}
+
+.card-requirements {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 0.875rem;
+  color: #000;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: DM Sans, sans-serif;
+}
+.btn-vaga {
+  background-image: linear-gradient(to right, #ff822f, #ff5c6c);
+  color: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 100px;
+  margin-top: 25px;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #df8123;
+}
+.content{
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0 ;
+  text-align: center;
+}
+
+.copyright{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px 100px;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  float: right;
+}
+.facebook{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 45px;
+  height: 30px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  background-image: url(https://classeasaude.com.br/wp-content/uploads/2020/01/icone-fb-branco.png);
+  ;
+}
+.instagram{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Instagram_logo.png/1024px-Instagram_logo.png);
+}
+.linkedin {
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 30px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  background-image: url(https://gcont.net.br/wp-content/uploads/2021/08/linkedin-branco-png-1-300x294.png);
+  margin: -2px 0px 0px 6px; 
+}
+.youtube{
+  text-align: center;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  background-image: url(/wp-content/themes/twentynineteen-opah/images/social-youtube.png);
+  display: none;
+}
+.copyright p {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  font-size: 12px;
+  color: #fff;
+  text-align: left;
+  margin: 10px 0;
+}

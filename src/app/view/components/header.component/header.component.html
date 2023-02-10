@@ -1,0 +1,210 @@
+<section class="section-header">
+  <div class="column-container-gap-header-transparent">
+    <div class="top-column">
+      <div class="widget-wrap-top-column">
+        <section class="inner-section">
+          <div class="column-container-gap-innert-section" fxLayout="row" fxLayoutAlign="space-around none">
+            <div class="inner-column-hidden">
+              <div class="widget-wrap-inner-column">
+                <div class="widget-image">
+                  <div class="widget-container-widget-image">
+                    <a href="home" class="Opah-header">
+                      <img width="300" height="117"
+                        src="https://www.opah.com.br/wp-content/uploads/2022/08/logo-opah-it-300x117.png"
+                        class="logo-opah">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="widget-wrap-inner-column-menu">
+              <div class="widget-wrap-menu">
+                <div class="nav-menu-dropdown-toggle">
+                  <div class="widget-container-menu">
+                    <nav class="nav-menu-main">
+                      <ul class="nav-menu">
+                        <li class="menu-itens">
+                          <a href="home" class="item-active-home">Home</a>
+                        </li>
+                        <li class="menu-itens">
+                          <a href="opah" class="item-opah">Opah</a>
+                        </li>
+                        <li class="menu-itens">
+                          <ng-container *ngFor="let menuItem of ModulesListProducts">
+                            <ng-container *ngIf="!menuItem.children">
+                              <a class="">
+                                <span class="text-holder">{{menuItem.label}}
+                                </span>
+                              </a>
+                            </ng-container>
+                            <ng-container *ngIf="menuItem.children.length > 0">
+                              <button class="buttonProducts" #button mat-button [matMenuTriggerFor]="levelOne"
+                                #levelOneTrigger="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTrigger)"
+                                (click)="buttonLeave(levelOneTrigger, button)" style="z-index:1050">
+                                <span>{{menuItem.label}}
+                                  <fa-icon [icon]="faChevronDown"></fa-icon>
+                                </span>
+                              </button>
+                              <mat-menu #levelOne="matMenu" direction="down" yPosition="below">
+                                <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTrigger, button)">
+                                  <ng-container *ngFor="let childL1 of menuItem.children">
+                        <li class="background-list-modal" *ngIf="!childL1.children" mat-menu-item>
+                          <a class="nav-link-label" *ngIf="!childL1.url">{{childL1.label}}
+                            <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
+                          </a>
+                          <a class="nav-link-url" *ngIf="childL1.url" href="{{childL1.url}}">{{childL1.label}}
+                            <i *ngIf="childL1.icon" [ngClass]="childL1.icon">
+                            </i>
+                          </a>
+                        </li>
+                        <ng-container *ngIf="childL1.children && childL1.children.length > 0">
+                          <li mat-menu-item #levelTwoTrigger="matMenuTrigger" [matMenuTriggerFor]="levelTwo">
+                            <span>{{childL1.label}}</span>
+                          </li>
+                          <mat-menu #levelTwo="matMenu">
+                            <span (mouseenter)="menu2enter()"
+                              (mouseleave)="menu2Leave(levelOneTrigger,levelTwoTrigger, button)">
+                              <ng-container *ngFor="let childL2 of childL1.children">
+                                <li mat-menu-item>
+                                  <a class="nav-link-url" href="{{childL2.url}}">{{childL2.label}}
+                                    <i *ngIf="childL2.icon" [ngClass]="childL2.icon"></i>
+                                  </a>
+                                </li>
+                              </ng-container>
+                            </span>
+                          </mat-menu>
+                        </ng-container>
+                        </ng-container>
+                        </span>
+                        </mat-menu>
+                        </ng-container>
+                        </ng-container>
+                        </li>
+                        <li class="menu-itens">
+                          <a href="vagas" class="itens-sub-menu">Vagas</a>
+                        </li>
+                        <li class="menu-itens">
+                          <a href="contato" class="itens-sub-menu">Contato</a>
+                        </li>
+                        <li class="menu-itens">
+                          <a href="orcamento" class="itens-sub-menu">Orçamentos</a>
+                        </li>
+                        <li class="menu-itens">
+                          <ng-container *ngFor="let menuItem of ModulesListAnchor">
+                            <ng-container *ngIf="!menuItem.children">
+                              <a class="">
+                                <span class="text-holder">{{menuItem.label}}</span>
+                              </a>
+                            </ng-container>
+                            <ng-container *ngIf="menuItem.children.length > 0">
+                              <button class="buttonAnchor" #button mat-button [matMenuTriggerFor]="levelOne"
+                                #levelOneTrigger="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTrigger)"
+                                (click)="buttonLeave(levelOneTrigger, button)" style="z-index:1050">
+                                <span>{{menuItem.label}}
+                                  <fa-icon [icon]="faChevronDown"></fa-icon>
+                                </span>
+                              </button>
+                              <mat-menu #levelOne="matMenu" direction="down" yPosition="below">
+                                <span (mouseenter)="menuenter()"
+                                  (mouseleave)="menuLeave(levelOneTrigger, button)"><ng-container
+                                    *ngFor="let childL1 of menuItem.children">
+                        <li class="background-list-modal" *ngIf="!childL1.children" mat-menu-item>
+                          <a class="nav-link-label" *ngIf="!childL1.url">{{childL1.label}}
+                            <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
+                          </a>
+                          <a class="nav-link-url" *ngIf="childL1.url" href="{{childL1.url}}">{{childL1.label}}
+                            <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
+                          </a>
+                        </li>
+                        <ng-container *ngIf="childL1.children && childL1.children.length > 0">
+                          <li mat-menu-item #levelTwoTrigger="matMenuTrigger" [matMenuTriggerFor]="levelTwo">
+                            <span>{{childL1.label}}</span>
+                          </li>
+                          <mat-menu #levelTwo="matMenu">
+                            <span (mouseenter)="menu2enter()"
+                              (mouseleave)="menu2Leave(levelOneTrigger,levelTwoTrigger, button)">
+                              <ng-container *ngFor="let childL2 of childL1.children">
+                                <li mat-menu-item>
+                                  <a class="nav-link-url" href="{{childL2.url}}">{{childL2.label}}
+                                    <i *ngIf="childL2.icon" [ngClass]="childL2.icon"></i>
+                                  </a>
+                                </li>
+                              </ng-container>
+                            </span>
+                          </mat-menu>
+                        </ng-container>
+                        </ng-container>
+                        </span>
+                        </mat-menu>
+                        </ng-container>
+                        </ng-container>
+                        </li>
+
+                      </ul>
+                    </nav>
+                    <div class="menu-toggle-mobile-active" role="button" tabindex="0" aria-label="Menu Toggle"
+                      aria-expanded="true">
+                      <li class="menu-itens">
+                        <ng-container *ngFor="let menuItem of ModulesListMenu">
+                          <ng-container *ngIf="!menuItem.children">
+                            <a>
+                              <span class="text-holder">{{menuItem.label}}
+                              </span>
+                            </a>
+                          </ng-container>
+                          <ng-container *ngIf="menuItem.children.length > 0">
+                            <button class="buttonMenu" #button mat-button [matMenuTriggerFor]="levelOne"
+                              #levelOneTrigger="matMenuTrigger" (toggle)="buttonEnter(levelOneTrigger)"
+                              (toggle)="buttonLeave(levelOneTrigger, button)" style="z-index:1050">
+                              <span>{{menuItem.label}}
+                                <fa-icon aria-hidden="true" role="presentation" [icon]="faBars"></fa-icon>
+                              </span>
+                            </button>
+                            <mat-menu class="mat-menu-list-menu" #levelOne="matMenu" direction="down"
+                              yPosition="below">
+                              <span (toggle)="menuenter()" (toggle)="menuLeave(levelOneTrigger, button)">
+                                <ng-container *ngFor="let childL1 of menuItem.children">
+                      <li class="background-list-menu" *ngIf="!childL1.children" mat-menu-item>
+                        <a class="nav-link-label-menu" *ngIf="!childL1.url">{{childL1.label}}
+                          <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
+                        </a>
+                        <a class="nav-link-url-menu" *ngIf="childL1.url" href="{{childL1.url}}">{{childL1.label}}
+                          <i *ngIf="childL1.icon" [ngClass]="childL1.icon">
+                          </i>
+                        </a>
+                      </li>
+                      <ng-container *ngIf="childL1.children && childL1.children.length > 0">
+                        <li class="p-0" mat-menu-item #levelTwoTrigger="matMenuTrigger"
+                          [matMenuTriggerFor]="levelTwo">
+                          <span>{{childL1.label}}</span>
+                        </li>
+                        <mat-menu #levelTwo="matMenu">
+                          <span (mouseenter)="menu2enter()"
+                            (mouseleave)="menu2Leave(levelOneTrigger,levelTwoTrigger, button)">
+                            <ng-container *ngFor="let childL2 of childL1.children">
+                              <li class="p-0" mat-menu-item>
+                                <a class="nav-link-url-menu" href="{{childL2.url}}">{{childL2.label}}
+                                  <i *ngIf="childL2.icon" [ngClass]="childL2.icon"></i>
+                                </a>
+                              </li>
+                            </ng-container>
+                          </span>
+                        </mat-menu>
+                      </ng-container>
+                      </ng-container>
+                      </span>
+                      </mat-menu>
+                      </ng-container>
+                      </ng-container>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
